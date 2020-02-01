@@ -36,4 +36,8 @@ $(document).ready(function () {
      $("#first-button").on("click", function () {
           $(this).hide("slow");
      });
+
+     $("button").on("click", function () {
+          $(this).siblings("p").toggle( "slow");
+     });
 });
