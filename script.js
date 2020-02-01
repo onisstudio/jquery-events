@@ -27,10 +27,13 @@ $(document).ready(function () {
      $("h2").hover(function () {
           $(this).css('font-size', '40px');
      });
-     $(".bottom_button").mouseenter(function(){
-          $("body").css( "background-color", "black"); 
-      });
-      $(".bottom_button").mouseleave(function(){
-          $("body").css( "background-color", "#eee"); 
-      });
+     $(".bottom_button").mouseenter(function () {
+          $("body").css("background-color", "black");
+     });
+     $(".bottom_button").mouseleave(function () {
+          $("body").css("background-color", "#eee");
+     });
+     $("#first-button").on("click", function () {
+          $(this).hide("slow");
+     });
 });
